@@ -30,6 +30,5 @@ func ExecInOS(cmd string) (string, error) {
 	}
 
 	args = append(args, cmd)
-	fmt.Println(args)
 	return Exec(args...)
 }
