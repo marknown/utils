@@ -33,25 +33,25 @@ func NowDateStringCN2() string {
 }
 
 // FormatTimeStringCN get now time format cn 2006-01-02 15:04:05
-func FormatTimeStringCN(t Time) string {
+func FormatTimeStringCN(t time.Time) string {
 	var cstZone = time.FixedZone("CST", 8*3600) // UTC/GMT +08:00
 	return t.In(cstZone).Format("2006-01-02 15:04:05")
 }
 
 // FormatTimeStringCN2 get now time format cn 20060102150405
-func FormatTimeStringCN2(t Time) string {
+func FormatTimeStringCN2(t time.Time) string {
 	var cstZone = time.FixedZone("CST", 8*3600) // UTC/GMT +08:00
 	return t.In(cstZone).Format("20060102150405")
 }
 
 // FormatDateStringCN get now time format cn 20060102
-func FormatDateStringCN(t Time) string {
+func FormatDateStringCN(t time.Time) string {
 	var cstZone = time.FixedZone("CST", 8*3600) // UTC/GMT +08:00
 	return t.In(cstZone).Format("2006-01-02")
 }
 
 // FormatDateStringCN get now time format cn 20060102
-func FormatDateStringCN2(t Time) string {
+func FormatDateStringCN2(t time.Time) string {
 	var cstZone = time.FixedZone("CST", 8*3600) // UTC/GMT +08:00
 	return t.In(cstZone).Format("20060102")
 }
